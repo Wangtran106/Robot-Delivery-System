@@ -7,6 +7,9 @@ The **Robot Delivery** project is an autonomous robot system built on the **STM3
 
 This project is not just about motor control; it integrates advanced signal processing from an IMU, PID algorithms, and a complex Finite State Machine (FSM).
 
+### Physical Model
+![Robot Physical Model](robot_model.png)
+
 ---
 
 ## Key Features
