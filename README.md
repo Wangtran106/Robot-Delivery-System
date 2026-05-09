@@ -51,6 +51,16 @@ The `controlSpeedStraight()` function utilizes a PID controller to maintain the 
 - **I (Integral):** Eliminates steady-state errors over time.
 - **D (Derivative):** Dampens oscillations for smoother directional corrections.
 
+### Complementary Filter
+To obtain stable orientation data from the MPU6050, a **Complementary Filter** is used to fuse data from the Accelerometer and Gyroscope. This filter combines the short-term accuracy of the gyroscope with the long-term stability of the accelerometer.
+
+The formula implemented is:
+```
+Angle = 0.96 * (Angle + Gyro_Rate * dt) + 0.04 * (Accel_Angle)
+```
+- **Gyroscope (96%):** Provides fast and smooth updates but suffers from drift over time.
+- **Accelerometer (4%):** Provides a stable reference to gravity but is noisy during movement.
+
 ---
 
 ## Contact
