@@ -19,6 +19,21 @@ This project is not just about motor control; it integrates advanced signal proc
 
 ---
 
+## Mobile App Control
+The robot is remotely controlled and monitored via a custom Android application built with **MIT App Inventor**. Communication is established through the **HC-05 Bluetooth module**.
+
+| App Interface | Logic Blocks |
+| :---: | :---: |
+| ![App UI](app_ui.png) | ![App Blocks](app_blocks.png) |
+
+The application allows users to:
+- Connect to the robot via Bluetooth.
+- Select specific delivery routes (Station B or Station C).
+- Monitor real-time status (Current State, Distance).
+- Handle manual disconnection.
+
+---
+
 ## Hardware Components
 | Component | Description | Role |
 | :--- | :--- | :--- |
