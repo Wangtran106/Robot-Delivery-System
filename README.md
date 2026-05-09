@@ -99,6 +99,6 @@ Weight = (Average_Raw_Value - Tare) * Coefficient
 ---
 
 ## Contact
-- **Author:** [Wangtran106]
-- **Email:** [trandinhquang011@gmail.com]
-- **Project:** Robot Delivery System v1.0
+- **Author:** Wangtran106
+- **Email:** trandinhquang011@gmail.com
+- **Project:** Robot Delivery System 
