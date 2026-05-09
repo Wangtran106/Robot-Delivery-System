@@ -47,19 +47,36 @@ The robot operates based on a robust state machine:
 
 ### PID Algorithm
 The `controlSpeedStraight()` function utilizes a PID controller to maintain the `targetAngle`:
-- **P (Proportional):** Immediate response to heading errors.
-- **I (Integral):** Eliminates steady-state errors over time.
-- **D (Derivative):** Dampens oscillations for smoother directional corrections.
+```
+Error = TargetAngle - CurrentAngle
+Integral = Integral + Error
+Derivative = Error - PreviousError
+Output = (Kp * Error) + (Ki * Integral) + (Kd * Derivative)
+```
+- **P (Proportional):** Immediate response to heading errors (Kp = 2.5).
+- **I (Integral):** Eliminates steady-state errors over time (Ki = 0.01).
+- **D (Derivative):** Dampens oscillations for smoother directional corrections (Kd = 0.5).
 
-### Complementary Filter
-To obtain stable orientation data from the MPU6050, a **Complementary Filter** is used to fuse data from the Accelerometer and Gyroscope. This filter combines the short-term accuracy of the gyroscope with the long-term stability of the accelerometer.
-
-The formula implemented is:
+### Sensor Fusion (Complementary Filter)
+To obtain stable orientation data from the MPU6050, a **Complementary Filter** is used to fuse data from the Accelerometer and Gyroscope.
 ```
 Angle = 0.96 * (Angle + Gyro_Rate * dt) + 0.04 * (Accel_Angle)
 ```
-- **Gyroscope (96%):** Provides fast and smooth updates but suffers from drift over time.
-- **Accelerometer (4%):** Provides a stable reference to gravity but is noisy during movement.
+
+### Odometry Calculation
+The robot tracks its position and distance traveled using wheel encoders:
+```
+Circumference = (π * Wheel_Diameter)
+Distance_per_Pulse = Circumference / Pulses_per_Revolution
+Total_Distance = (Encoder_Counter * Distance_per_Pulse) / 10
+```
+
+### Load Cell Calibration (HX711)
+The weight of the cargo is calculated by converting raw sensor data into milligrams:
+```
+Coefficient = Known_Weight / Raw_Value_Offset
+Weight = (Average_Raw_Value - Tare) * Coefficient
+```
 
 ---
 
