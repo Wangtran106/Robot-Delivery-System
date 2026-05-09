@@ -1,0 +1,3 @@
+../Core/Src/path_planning.c:16:6:HandleRouteB	13
+../Core/Src/path_planning.c:84:6:HandleRouteC	13
+../Core/Src/path_planning.c:152:6:State	18

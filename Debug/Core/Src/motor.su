@@ -1,0 +1,12 @@
+../Core/Src/motor.c:28:13:SetMotor	24	static
+../Core/Src/motor.c:41:6:Motor_Straight	16	static
+../Core/Src/motor.c:47:6:Motor_Backward	16	static
+../Core/Src/motor.c:53:6:Motor_SidewayLeft	16	static
+../Core/Src/motor.c:59:6:Motor_SidewayRight	16	static
+../Core/Src/motor.c:65:6:Motor_DiagonalLeft	16	static
+../Core/Src/motor.c:71:6:Motor_DiagonalRight	16	static
+../Core/Src/motor.c:77:6:Motor_TurnRound	16	static
+../Core/Src/motor.c:83:6:Motor_Concerning	16	static
+../Core/Src/motor.c:89:6:Motor_TurnRearAxis	16	static
+../Core/Src/motor.c:95:6:Motor_Stop	16	static
+../Core/Src/motor.c:101:6:Motor_SetSpeed4	16	static

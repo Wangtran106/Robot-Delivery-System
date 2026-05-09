@@ -1,0 +1,3 @@
+../Core/Src/path_planning.c:16:6:HandleRouteB	8	static
+../Core/Src/path_planning.c:84:6:HandleRouteC	8	static
+../Core/Src/path_planning.c:152:6:State	8	static

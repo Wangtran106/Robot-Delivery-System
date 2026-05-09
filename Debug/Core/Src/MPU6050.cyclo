@@ -1,0 +1,5 @@
+../Core/Src/MPU6050.c:21:6:MPU6050_Init	2
+../Core/Src/MPU6050.c:35:6:MPU6050_Read_Accel	1
+../Core/Src/MPU6050.c:46:6:MPU6050_Read_Gyro	1
+../Core/Src/MPU6050.c:57:6:MPU6050_CalculateError	2
+../Core/Src/MPU6050.c:78:6:MPU6050_Update	1

@@ -1,0 +1,5 @@
+../Core/Src/MPU6050.c:21:6:MPU6050_Init	32	static
+../Core/Src/MPU6050.c:35:6:MPU6050_Read_Accel	56	static
+../Core/Src/MPU6050.c:46:6:MPU6050_Read_Gyro	56	static
+../Core/Src/MPU6050.c:57:6:MPU6050_CalculateError	48	static
+../Core/Src/MPU6050.c:78:6:MPU6050_Update	48	static

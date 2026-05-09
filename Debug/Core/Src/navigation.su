@@ -1,0 +1,8 @@
+../Core/Src/navigation.c:19:6:controlSpeedStraight	40	static
+../Core/Src/navigation.c:47:6:controlSpeedBackward	40	static
+../Core/Src/navigation.c:75:6:drivingStraight	16	static
+../Core/Src/navigation.c:88:6:drivingBackward	16	static
+../Core/Src/navigation.c:101:6:goStraight	24	static
+../Core/Src/navigation.c:125:6:goBackward	24	static
+../Core/Src/navigation.c:139:6:goSideWayLeft	24	static
+../Core/Src/navigation.c:160:6:goSideWayRight	24	static
